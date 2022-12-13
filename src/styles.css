@@ -1,5 +1,11 @@
 /* Add application styles & imports to this file! */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 body {
-  min-height: 100vh;
+  min-height: 97vh;
+}
+
+my-app {
+  display: block;
+  height: 97vh;
 }
