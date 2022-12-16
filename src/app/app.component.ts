@@ -13,6 +13,11 @@ export class AppComponent {
 
   ngOnInit() {
     this.currCharacter.char_info.m_name = 'Test Char 1';
+    this.currCharacter.char_info.m_birthplace = 'Birthplace1';
+    this.currCharacter.char_info.m_pronoun = 'He/Him';
+    this.currCharacter.char_info.m_occupation = 'Job 1';
+    this.currCharacter.char_info.m_residence = 'House 1';
+    this.currCharacter.char_info.m_age = 23;
   }
 
   toggleSidebar(): void {

@@ -1,6 +1,56 @@
-<div class="padded-row">
-  <mat-form-field appearance="outline" [(ngModel)]="character.char_info.m_name">
-    <mat-label>Name</mat-label>
-    <input matInput placeholder="name" />
-  </mat-form-field>
+<div class="main-column">
+  <div class="padded-row">
+    <mat-form-field appearance="outline" subscriptSizing="dynamic">
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        placeholder="name"
+        [(ngModel)]="character.char_info.m_name"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline" subscriptSizing="dynamic">
+      <mat-label>Birthplace</mat-label>
+      <input
+        matInput
+        placeholder="birthplace"
+        [(ngModel)]="character.char_info.m_birthplace"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline" subscriptSizing="dynamic">
+      <mat-label>Pronoun</mat-label>
+      <input
+        matInput
+        placeholder="pronoun"
+        [(ngModel)]="character.char_info.m_pronoun"
+      />
+    </mat-form-field>
+  </div>
+  <div class="padded-row">
+    <mat-form-field appearance="outline" subscriptSizing="dynamic">
+      <mat-label>Occupation</mat-label>
+      <input
+        matInput
+        placeholder="occupation"
+        [(ngModel)]="character.char_info.m_occupation"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline" subscriptSizing="dynamic">
+      <mat-label>Residence</mat-label>
+      <input
+        matInput
+        placeholder="residence"
+        [(ngModel)]="character.char_info.m_residence"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline" subscriptSizing="dynamic">
+      <mat-label>Age</mat-label>
+      <input
+        type="number"
+        matInput
+        maxlength="3"
+        placeholder="age"
+        [(ngModel)]="character.char_info.m_age"
+      />
+    </mat-form-field>
+  </div>
 </div>
