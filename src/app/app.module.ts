@@ -11,6 +11,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CharIdComponent } from './char-id/char-id.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatTabsModule,
     BrowserAnimationsModule,
   ],
-  declarations: [AppComponent, HelloComponent, CharSheetComponent],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    CharSheetComponent,
+    CharIdComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
