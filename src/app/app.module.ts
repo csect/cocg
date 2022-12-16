@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CharIdComponent } from './char-id/char-id.component';
+import { CharCharacteristicsComponent } from './char-characteristics/char-characteristics.component';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { CharIdComponent } from './char-id/char-id.component';
     HelloComponent,
     CharSheetComponent,
     CharIdComponent,
+    CharCharacteristicsComponent,
   ],
   bootstrap: [AppComponent],
 })
