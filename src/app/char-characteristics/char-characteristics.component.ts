@@ -12,4 +12,7 @@ export class CharCharacteristicsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+  round(n: number): number {
+    return Math.floor(n);
+  }
 }
