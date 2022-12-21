@@ -1,0 +1,17 @@
+.padded-col {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: col;
+  gap: 0px;
+}
+
+.padded-row {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.shrunk {
+  flex-basis: 0;
+  min-width: 100px;
+}

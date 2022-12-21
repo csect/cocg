@@ -1,0 +1,22 @@
+<div class="padded-col">
+  <div class="padded-row">
+    <mat-form-field appearance="outline" subscriptSizing="dynamic">
+      <mat-label>{{ label }}</mat-label>
+      <input
+        type="number"
+        matInput
+        maxlength="3"
+        placeholder="str"
+        [(ngModel)]="character.characteristics[stat]"
+      />
+    </mat-form-field>
+  </div>
+  <div class="padded-col">
+    <div>
+      <Label> {{ round(character.characteristics[stat] / 2) }} (half) </Label>
+    </div>
+    <div>
+      <Label>{{ round(character.characteristics[stat] / 5) }} (fifth)</Label>
+    </div>
+  </div>
+</div>

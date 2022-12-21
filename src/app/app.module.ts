@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CharIdComponent } from './char-id/char-id.component';
 import { CharCharacteristicsComponent } from './char-characteristics/char-characteristics.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatBadgeModule } from '@angular/material/badge';
+import { CharacteristicComponent } from './characteristic/characteristic.component';
 
 @NgModule({
   imports: [
@@ -26,6 +28,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatTabsModule,
     MatExpansionModule,
     BrowserAnimationsModule,
+    MatBadgeModule,
   ],
   declarations: [
     AppComponent,
@@ -33,6 +36,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     CharSheetComponent,
     CharIdComponent,
     CharCharacteristicsComponent,
+    CharacteristicComponent,
   ],
   bootstrap: [AppComponent],
 })
