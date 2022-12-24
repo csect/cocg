@@ -3,15 +3,31 @@
   display: flex;
   flex-direction: col;
   gap: 0px;
+  border-style: dotted;
+  border-color: black;
 }
 
 .padded-row {
   display: flex;
   flex-direction: row;
   gap: 5px;
+  font-size: 4px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  border-color: black;
 }
 
 .shrunk {
   flex-basis: 0;
   min-width: 100px;
+}
+
+.stat-form {
+  max-width: 80px;
+}
+
+.calc-form {
+  max-width: 60px;
+  margin: 5px;
 }

@@ -1,22 +1,46 @@
-<div class="padded-col">
-  <div class="padded-row">
-    <mat-form-field appearance="outline" subscriptSizing="dynamic">
-      <mat-label>{{ label }}</mat-label>
-      <input
-        type="number"
-        matInput
-        maxlength="3"
-        placeholder="str"
-        [(ngModel)]="character.characteristics[stat]"
-      />
-    </mat-form-field>
-  </div>
-  <div class="padded-col">
-    <div>
-      <Label> {{ round(character.characteristics[stat] / 2) }} (half) </Label>
-    </div>
-    <div>
-      <Label>{{ round(character.characteristics[stat] / 5) }} (fifth)</Label>
-    </div>
-  </div>
+<div class="padded-row">
+  <mat-form-field
+    class="stat-form"
+    appearance="outline"
+    subscriptSizing="dynamic"
+  >
+    <mat-label>{{ label }}</mat-label>
+    <input
+      type="number"
+      matInput
+      maxlength="1"
+      placeholder="str"
+      [(ngModel)]="character.characteristics[stat]"
+    />
+  </mat-form-field>
+  <mat-form-field
+    class="calc-form"
+    appearance="outline"
+    subscriptSizing="dynamic"
+  >
+    <mat-label>half</mat-label>
+    <input
+      matInput
+      maxlength="1"
+      readonly="true"
+      disabled="true"
+      placeholder="str"
+      [value]="round(character.characteristics[stat] / 2)"
+    />
+  </mat-form-field>
+  <mat-form-field
+    class="calc-form"
+    appearance="outline"
+    subscriptSizing="dynamic"
+  >
+    <mat-label>fifth</mat-label>
+    <input
+      matInput
+      maxlength="1"
+      readonly="true"
+      disabled="true"
+      placeholder="str"
+      [value]="round(character.characteristics[stat] / 5)"
+    />
+  </mat-form-field>
 </div>
