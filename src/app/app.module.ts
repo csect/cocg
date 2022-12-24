@@ -16,6 +16,7 @@ import { CharCharacteristicsComponent } from './char-characteristics/char-charac
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatBadgeModule } from '@angular/material/badge';
 import { CharacteristicComponent } from './characteristic/characteristic.component';
+import { PoolStatComponent } from './pool-stat/pool-stat.component';
 
 @NgModule({
   imports: [
@@ -37,6 +38,7 @@ import { CharacteristicComponent } from './characteristic/characteristic.compone
     CharIdComponent,
     CharCharacteristicsComponent,
     CharacteristicComponent,
+    PoolStatComponent,
   ],
   bootstrap: [AppComponent],
 })

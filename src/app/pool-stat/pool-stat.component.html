@@ -1,0 +1,30 @@
+<div class="padded-row">
+  <mat-form-field
+    class="stat-form"
+    appearance="outline"
+    subscriptSizing="dynamic"
+  >
+    <mat-label>{{ label }}</mat-label>
+    <input
+      type="number"
+      matInput
+      maxlength="1"
+      placeholder="str"
+      [(ngModel)]="character.characteristics[stat]"
+    />
+  </mat-form-field>
+  <mat-form-field
+    class="calc-form"
+    appearance="outline"
+    subscriptSizing="dynamic"
+  >
+    <mat-label>current</mat-label>
+    <input
+      matInput
+      type="number"
+      maxlength="1"
+      placeholder="str"
+      [(ngModel)]="character.characteristics[currStat]"
+    />
+  </mat-form-field>
+</div>

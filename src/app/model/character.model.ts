@@ -22,7 +22,9 @@ export class Characteristics {
   m_appearance: number = 0;
   m_education: number = 0;
   m_hp: number = 0;
+  m_hp_current: number = 0;
   m_mp: number = 0;
+  m_mp_current: number = 0;
   m_luck: number = 0;
   m_sanity: number = 0;
 }

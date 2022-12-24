@@ -4,3 +4,9 @@
   flex-direction: row;
   gap: 5px;
 }
+.padded-col {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

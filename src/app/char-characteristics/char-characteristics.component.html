@@ -1,13 +1,34 @@
-<div class="padded-row">
-  <app-characteristic
-    class=""
-    [character]="character"
-    stat="m_strength"
-    label="Strength"
-  >
-  </app-characteristic>
-  <app-characteristic [character]="character" stat="m_size" label="Size">
-  </app-characteristic>
-  <app-characteristic [character]="character" stat="m_hp" label="Hit Points">
-  </app-characteristic>
+<div class="padded-col">
+  <div class="padded-row">
+    <app-characteristic
+      class=""
+      [character]="character"
+      stat="m_strength"
+      label="Strength"
+    >
+    </app-characteristic>
+    <app-characteristic [character]="character" stat="m_size" label="Size">
+    </app-characteristic>
+    <app-pool-stat
+      [character]="character"
+      stat="m_hp"
+      currStat="m_hp_current"
+      label="Hit Points"
+    >
+    </app-pool-stat>
+  </div>
+  <div class="padded-row">
+    <app-characteristic
+      class=""
+      [character]="character"
+      stat="m_constitution"
+      label="Con"
+    ></app-characteristic>
+    <app-characteristic
+      class=""
+      [character]="character"
+      stat="m_power"
+      label="Pow"
+    ></app-characteristic>
+  </div>
 </div>
