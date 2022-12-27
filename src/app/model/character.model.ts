@@ -26,7 +26,9 @@ export class Characteristics {
   m_mp: number = 0;
   m_mp_current: number = 0;
   m_luck: number = 0;
+  m_luck_current: number = 0;
   m_sanity: number = 0;
+  m_sanity_current: number = 0;
 }
 
 export class CharSkills {
