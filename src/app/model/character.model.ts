@@ -1,5 +1,6 @@
 export class Character {
   char_info: CharInfo = new CharInfo();
+  char_status: CharStatus = new CharStatus();
   characteristics: Characteristics = new Characteristics();
 }
 
@@ -29,6 +30,15 @@ export class Characteristics {
   m_luck_current: number = 0;
   m_sanity: number = 0;
   m_sanity_current: number = 0;
+  m_sanity_max: number = 0;
+}
+
+export class CharStatus {
+  m_temporary_insanity: boolean = false;
+  m_indefinite_insanity: boolean = false;
+  m_major_wound: boolean = false;
+  m_unconscious: boolean = false;
+  m_dying: boolean = false;
 }
 
 export class CharSkills {

@@ -1,0 +1,49 @@
+<div class="row">
+  <mat-form-field
+    class="stat-form"
+    appearance="outline"
+    subscriptSizing="dynamic"
+  >
+    <mat-label>Max Sanity</mat-label>
+    <input
+      type="number"
+      matInput
+      maxlength="1"
+      placeholder="str"
+      [(ngModel)]="character.characteristics.m_sanity_max"
+    />
+  </mat-form-field>
+
+  <mat-list role="list" class="detail-panel">
+    <div mat-subheader>Insanity</div>
+    <mat-list-item role="listitem"
+      ><mat-checkbox [(ngModel)]="character.char_status.m_temporary_insanity"
+        >Temporary</mat-checkbox
+      >
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <mat-checkbox [(ngModel)]="character.char_status.m_indefinite_insanity"
+        >Indefinite</mat-checkbox
+      >
+    </mat-list-item>
+  </mat-list>
+
+  <mat-list role="list" class="detail-panel">
+    <div mat-subheader>Health</div>
+    <mat-list-item>
+      <mat-checkbox [(ngModel)]="character.char_status.m_major_wound"
+        >Major Wound</mat-checkbox
+      >
+    </mat-list-item>
+    <mat-list-item
+      ><mat-checkbox [(ngModel)]="character.char_status.m_unconscious"
+        >Unconscious</mat-checkbox
+      >
+    </mat-list-item>
+    <mat-list-item>
+      <mat-checkbox [(ngModel)]="character.char_status.m_dying"
+        >dying</mat-checkbox
+      >
+    </mat-list-item>
+  </mat-list>
+</div>

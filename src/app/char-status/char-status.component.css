@@ -1,0 +1,10 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.detail-panel {
+  margin: 5px;
+  border: 1px solid black;
+}

@@ -1,93 +1,83 @@
-<mat-accordion class="example-headers-align">
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title> Characteristics </mat-panel-title>
-      <mat-panel-description>
-        <mat-icon>account_circle</mat-icon>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <div class="padded-col">
-      <div class="padded-row">
-        <app-characteristic
-          class=""
-          [character]="character"
-          stat="m_strength"
-          label="Strength"
-        >
-        </app-characteristic>
-        <app-characteristic [character]="character" stat="m_size" label="Size">
-        </app-characteristic>
-        <app-pool-stat
-          [character]="character"
-          stat="m_hp"
-          currStat="m_hp_current"
-          label="Hit Points"
-        >
-        </app-pool-stat>
-      </div>
-      <div class="padded-row">
-        <app-characteristic
-          class=""
-          [character]="character"
-          stat="m_constitution"
-          label="Con"
-        ></app-characteristic>
-        <app-characteristic
-          class=""
-          [character]="character"
-          stat="m_power"
-          label="Pow"
-        ></app-characteristic>
-        <app-pool-stat
-          [character]="character"
-          stat="m_mp"
-          currStat="m_mp_current"
-          label="Magic Points"
-        >
-        </app-pool-stat>
-      </div>
-      <div class="padded-row">
-        <app-characteristic
-          class=""
-          [character]="character"
-          stat="m_dexterity"
-          label="Dex"
-        ></app-characteristic>
-        <app-characteristic
-          class=""
-          [character]="character"
-          stat="m_appearance"
-          label="App"
-        ></app-characteristic>
-        <app-pool-stat
-          [character]="character"
-          stat="m_luck"
-          currStat="m_luck_current"
-          label="Luck"
-        >
-        </app-pool-stat>
-      </div>
-      <div class="padded-row">
-        <app-characteristic
-          class=""
-          [character]="character"
-          stat="m_intelligence"
-          label="Int"
-        ></app-characteristic>
-        <app-characteristic
-          class=""
-          [character]="character"
-          stat="m_education"
-          label="Edu"
-        ></app-characteristic>
-        <app-pool-stat
-          [character]="character"
-          stat="m_sanity"
-          currStat="m_sanity_current"
-          label="Sanity"
-        >
-        </app-pool-stat>
-      </div>
-    </div>
-  </mat-expansion-panel>
-</mat-accordion>
+<div class="padded-col">
+  <div class="padded-row">
+    <app-characteristic
+      class=""
+      [character]="character"
+      stat="m_strength"
+      label="Strength"
+    >
+    </app-characteristic>
+    <app-characteristic [character]="character" stat="m_size" label="Size">
+    </app-characteristic>
+    <app-pool-stat
+      [character]="character"
+      stat="m_hp"
+      currStat="m_hp_current"
+      label="Hit Points"
+    >
+    </app-pool-stat>
+  </div>
+  <div class="padded-row">
+    <app-characteristic
+      class=""
+      [character]="character"
+      stat="m_constitution"
+      label="Con"
+    ></app-characteristic>
+    <app-characteristic
+      class=""
+      [character]="character"
+      stat="m_power"
+      label="Pow"
+    ></app-characteristic>
+    <app-pool-stat
+      [character]="character"
+      stat="m_mp"
+      currStat="m_mp_current"
+      label="Magic Points"
+    >
+    </app-pool-stat>
+  </div>
+  <div class="padded-row">
+    <app-characteristic
+      class=""
+      [character]="character"
+      stat="m_dexterity"
+      label="Dex"
+    ></app-characteristic>
+    <app-characteristic
+      class=""
+      [character]="character"
+      stat="m_appearance"
+      label="App"
+    ></app-characteristic>
+    <app-pool-stat
+      [character]="character"
+      stat="m_luck"
+      currStat="m_luck_current"
+      label="Luck"
+    >
+    </app-pool-stat>
+  </div>
+  <div class="padded-row">
+    <app-characteristic
+      class=""
+      [character]="character"
+      stat="m_intelligence"
+      label="Int"
+    ></app-characteristic>
+    <app-characteristic
+      class=""
+      [character]="character"
+      stat="m_education"
+      label="Edu"
+    ></app-characteristic>
+    <app-pool-stat
+      [character]="character"
+      stat="m_sanity"
+      currStat="m_sanity_current"
+      label="Sanity"
+    >
+    </app-pool-stat>
+  </div>
+</div>

@@ -10,13 +10,16 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CharIdComponent } from './char-id/char-id.component';
 import { CharCharacteristicsComponent } from './char-characteristics/char-characteristics.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatBadgeModule } from '@angular/material/badge';
 import { CharacteristicComponent } from './characteristic/characteristic.component';
+import { CharStatusComponent } from './char-status/char-status.component';
 import { PoolStatComponent } from './pool-stat/pool-stat.component';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   imports: [
@@ -30,6 +33,8 @@ import { PoolStatComponent } from './pool-stat/pool-stat.component';
     MatExpansionModule,
     BrowserAnimationsModule,
     MatBadgeModule,
+    MatCheckboxModule,
+    MatListModule,
   ],
   declarations: [
     AppComponent,
@@ -39,6 +44,7 @@ import { PoolStatComponent } from './pool-stat/pool-stat.component';
     CharCharacteristicsComponent,
     CharacteristicComponent,
     PoolStatComponent,
+    CharStatusComponent,
   ],
   bootstrap: [AppComponent],
 })

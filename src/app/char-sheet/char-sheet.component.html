@@ -4,10 +4,42 @@
     <div class="col">
       <!--Name , characteristics -->
       <app-char-id [character]="character"></app-char-id>
-      <app-char-characteristics
-        [character]="character"
-      ></app-char-characteristics>
+      <p>Accordion</p>
+
+      <mat-accordion multi displayMode="flat">
+        <!-- Panel: Characteristics-->
+        <mat-expansion-panel expanded="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>Characteristics</mat-panel-title>
+            <mat-panel-description>
+              <mat-icon>account_circle</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <app-char-characteristics [character]="character">
+          </app-char-characteristics>
+        </mat-expansion-panel>
+        <!-- Panel: Status-->
+        <mat-expansion-panel expanded="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>Status</mat-panel-title>
+            <mat-panel-description>
+              <mat-icon>view_kanban</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <app-char-status [character]="character"> </app-char-status>
+        </mat-expansion-panel>
+
+        <!-- Panel: Skills-->
+        <mat-expansion-panel expanded="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>Skills</mat-panel-title>
+            <mat-panel-description>
+              <mat-icon>dataset</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>Skills Go Here</p>
+        </mat-expansion-panel>
+      </mat-accordion>
     </div>
-    <div><<img src="" alt="image" /></div>
   </div>
 </div>
