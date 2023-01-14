@@ -10,7 +10,7 @@
       matInput
       maxlength="1"
       placeholder="str"
-      [(ngModel)]="character.characteristics[stat]"
+      [(ngModel)]="character[sub_block][stat]"
     />
   </mat-form-field>
   <mat-form-field
@@ -25,7 +25,7 @@
       readonly="true"
       disabled="true"
       placeholder="str"
-      [value]="round(character.characteristics[stat] / 2)"
+      [value]="round(character[sub_block][stat] / 2)"
     />
   </mat-form-field>
   <mat-form-field
@@ -40,7 +40,7 @@
       readonly="true"
       disabled="true"
       placeholder="str"
-      [value]="round(character.characteristics[stat] / 5)"
+      [value]="round(character[sub_block][stat] / 5)"
     />
   </mat-form-field>
 </div>

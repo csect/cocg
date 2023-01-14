@@ -10,9 +10,14 @@ export class CharacteristicComponent implements OnInit {
   @Input() character: Character;
   @Input() stat: string;
   @Input() label: string;
+  @Input() sub_block: string;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    if (this.sub_block == null) {
+      this.sub_block = 'characteristics';
+    }
+  }
   round(n: number): number {
     return Math.floor(n);
   }

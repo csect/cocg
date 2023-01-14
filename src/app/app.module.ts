@@ -20,6 +20,7 @@ import { CharacteristicComponent } from './characteristic/characteristic.compone
 import { CharStatusComponent } from './char-status/char-status.component';
 import { PoolStatComponent } from './pool-stat/pool-stat.component';
 import { MatListModule } from '@angular/material/list';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   imports: [
@@ -45,6 +46,7 @@ import { MatListModule } from '@angular/material/list';
     CharacteristicComponent,
     PoolStatComponent,
     CharStatusComponent,
+    SkillsComponent,
   ],
   bootstrap: [AppComponent],
 })

@@ -2,6 +2,7 @@ export class Character {
   char_info: CharInfo = new CharInfo();
   char_status: CharStatus = new CharStatus();
   characteristics: Characteristics = new Characteristics();
+  skills: CharSkills = new CharSkills();
 }
 
 export class CharInfo {

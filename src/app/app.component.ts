@@ -18,6 +18,10 @@ export class AppComponent {
     this.currCharacter.char_info.m_occupation = 'Job 1';
     this.currCharacter.char_info.m_residence = 'House 1';
     this.currCharacter.char_info.m_age = 23;
+
+    this.currCharacter.characteristics.m_strength = 25;
+    this.currCharacter.characteristics.m_size = 26;
+    this.currCharacter.characteristics.m_hp = 27;
   }
 
   toggleSidebar(): void {
