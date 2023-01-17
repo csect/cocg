@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Character } from '../model/character.model';
+import { Character, Skill } from '../model/character.model';
 
 @Component({
   selector: 'app-skill',
@@ -9,7 +9,11 @@ import { Character } from '../model/character.model';
 export class SkillComponent implements OnInit {
   @Input() character: Character;
   @Input() stat: string;
+  public skill: Skill;
+
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.skill = this.character.skills[this.stat];
+  }
 }

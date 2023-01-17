@@ -108,6 +108,9 @@ export class Skill {
     this.m_skill_name = n;
     this.m_detail_name = d;
     this.m_detail_required = dr;
+    if (this.m_skill_name in DEFAULT_SKILL_BASE) {
+      this.m_base_val = DEFAULT_SKILL_BASE[this.m_skill_name];
+    }
   }
 
   set_base(char: Character): void {
